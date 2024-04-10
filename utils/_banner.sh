@@ -25,7 +25,7 @@ printf "${CYAN_LIGHT}";
 
 
                                                                                                                                                          
-  printf "            \033[1;33m        © Instalador Whaticket\n";
+  printf "            \033[1;33m        © Instalador WhaConnect\n";
   printf "${NC}";
 
   printf "\n"

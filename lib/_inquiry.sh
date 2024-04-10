@@ -3,7 +3,7 @@
 get_mysql_root_password() {
   
   print_banner
-  printf "${WHITE} 💻 Insira senha para o usuario Deploy e Banco de Dados (Não utilizar caracteres especiais):${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Por favor, introduzca la contraseña para el usuario Deploy y la Base de Datos (No utilice caracteres especiales):${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " mysql_root_password
 }
@@ -11,7 +11,7 @@ get_mysql_root_password() {
 get_link_git() {
   
   print_banner
-  printf "${WHITE} 💻 Insira o link do GITHUB que deseja instalar:${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Por favor, ingrese el enlace de GitHub que desea instalar:${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " link_git
 }
@@ -19,7 +19,7 @@ get_link_git() {
 get_instancia_add() {
   
   print_banner
-  printf "${WHITE} 💻 Informe um nome para a Instancia/Empresa que será instalada (Não utilizar espaços ou caracteres especiais, Utilizar Letras minusculas; ):${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Por favor, indique un nombre para la instancia/empresa que se instalará (No utilice espacios ni caracteres especiales, use letras minúsculas):${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " instancia_add
 }
@@ -27,7 +27,7 @@ get_instancia_add() {
 get_max_whats() {
   
   print_banner
-  printf "${WHITE} 💻 Informe a Qtde de Conexões/Whats que a ${instancia_add} poderá cadastrar:${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Por favor, indique la cantidad de conexiones/WhatsApp que la ${instancia_add} podrá registrar:${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " max_whats
 }
@@ -35,7 +35,7 @@ get_max_whats() {
 get_max_user() {
   
   print_banner
-  printf "${WHITE} 💻 Informe a Qtde de Usuarios/Atendentes que a ${instancia_add} poderá cadastrar:${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Por favor, indique la cantidad de usuarios/agentes que la ${instancia_add} podrá registrar:${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " max_user
 }
@@ -43,7 +43,7 @@ get_max_user() {
 get_frontend_url() {
   
   print_banner
-  printf "${WHITE} 💻 Digite o domínio do FRONTEND/PAINEL para a ${instancia_add}:${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Por favor, ingresa el dominio del FRONTEND/PANEL para la ${instancia_add}:${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " frontend_url
 }
@@ -51,7 +51,7 @@ get_frontend_url() {
 get_backend_url() {
   
   print_banner
-  printf "${WHITE} 💻 Digite o domínio do BACKEND/API para a ${instancia_add}:${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Por favor, ingresa el dominio del BACKEND/API para la ${instancia_add}:${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " backend_url
 }
@@ -59,7 +59,7 @@ get_backend_url() {
 get_frontend_port() {
   
   print_banner
-  printf "${WHITE} 💻 Digite a porta do FRONTEND para a ${instancia_add}; Ex: 3000 A 3999 ${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ingresa el puerto del FRONTEND para la ${instancia_add}; Ejemplo: 3000 a 3999 ${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " frontend_port
 }
@@ -68,7 +68,7 @@ get_frontend_port() {
 get_backend_port() {
   
   print_banner
-  printf "${WHITE} 💻 Digite a porta do BACKEND para esta instancia; Ex: 4000 A 4999 ${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ingresa el puerto del BACKEND para esta instancia; Ejemplo: 4000 a 4999 ${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " backend_port
 }
@@ -76,7 +76,7 @@ get_backend_port() {
 get_redis_port() {
   
   print_banner
-  printf "${WHITE} 💻 Digite a porta do REDIS/AGENDAMENTO MSG para a ${instancia_add}; Ex: 5000 A 5999 ${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ingresa el puerto de REDIS/TAREA DE MENSAJES para la ${instancia_add}; Ejemplo: 5000 a 5999 ${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " redis_port
 }
@@ -84,7 +84,7 @@ get_redis_port() {
 get_empresa_delete() {
   
   print_banner
-  printf "${WHITE} 💻 Digite o nome da Instancia/Empresa que será Deletada (Digite o mesmo nome de quando instalou):${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ingresa el nombre de la instancia/empresa que será eliminada (Ingrese el mismo nombre que cuando la instaló):${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " empresa_delete
 }
@@ -92,7 +92,7 @@ get_empresa_delete() {
 get_empresa_atualizar() {
   
   print_banner
-  printf "${WHITE} 💻 Digite o nome da Instancia/Empresa que deseja Atualizar (Digite o mesmo nome de quando instalou):${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ingresa el nombre de la instancia/empresa que deseas actualizar (Ingresa el mismo nombre que cuando la instalaste):${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " empresa_atualizar
 }
@@ -100,7 +100,7 @@ get_empresa_atualizar() {
 get_empresa_bloquear() {
   
   print_banner
-  printf "${WHITE} 💻 Digite o nome da Instancia/Empresa que deseja Bloquear (Digite o mesmo nome de quando instalou):${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ingresa el nombre de la instancia/empresa que deseas bloquear (Ingresa el mismo nombre que cuando la instalaste):${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " empresa_bloquear
 }
@@ -108,7 +108,7 @@ get_empresa_bloquear() {
 get_empresa_desbloquear() {
   
   print_banner
-  printf "${WHITE} 💻 Digite o nome da Instancia/Empresa que deseja Desbloquear (Digite o mesmo nome de quando instalou):${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ingresa el nombre de la instancia/empresa que deseas desbloquear (Ingresa el mismo nombre que cuando la instalaste):${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " empresa_desbloquear
 }
@@ -116,7 +116,7 @@ get_empresa_desbloquear() {
 get_empresa_dominio() {
   
   print_banner
-  printf "${WHITE} 💻 Digite o nome da Instancia/Empresa que deseja Alterar os Dominios (Atenção para alterar os dominios precisa digitar os 2, mesmo que vá alterar apenas 1):${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ingresa el nombre de la instancia/empresa que deseas cambiar los dominios (Ten en cuenta que para cambiar los dominios necesitas ingresar ambos, aunque solo vayas a cambiar uno):${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " empresa_dominio
 }
@@ -124,7 +124,7 @@ get_empresa_dominio() {
 get_alter_frontend_url() {
   
   print_banner
-  printf "${WHITE} 💻 Digite o NOVO domínio do FRONTEND/PAINEL para a ${empresa_dominio}:${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ingresa el NUEVO dominio del FRONTEND/PANEL: ${empresa_dominio}:${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " alter_frontend_url
 }
@@ -132,7 +132,7 @@ get_alter_frontend_url() {
 get_alter_backend_url() {
   
   print_banner
-  printf "${WHITE} 💻 Digite o NOVO domínio do BACKEND/API para a ${empresa_dominio}:${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ingresa el NUEVO dominio del BACKEND/API para la ${empresa_dominio}:${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " alter_backend_url
 }
@@ -140,7 +140,7 @@ get_alter_backend_url() {
 get_alter_frontend_port() {
   
   print_banner
-  printf "${WHITE} 💻 Digite a porta do FRONTEND da Instancia/Empresa ${empresa_dominio}; A porta deve ser o mesma informada durante a instalação ${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ingresa el puerto del FRONTEND de la Instancia/Empresa ${empresa_dominio}; El puerto debe ser el mismo que se proporcionó durante la instalación. ${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " alter_frontend_port
 }
@@ -149,7 +149,7 @@ get_alter_frontend_port() {
 get_alter_backend_port() {
   
   print_banner
-  printf "${WHITE} 💻 Digite a porta do BACKEND da Instancia/Empresa ${empresa_dominio}; A porta deve ser o mesma informada durante a instalação ${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Digite el puerto del BACKEND de la Instancia/Empresa ${empresa_dominio}; El puerto debe ser la misma que se proporcionó durante la instalación.${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " alter_backend_port
 }
@@ -201,11 +201,11 @@ software_dominio() {
 inquiry_options() {
   
   print_banner
-  printf "${WHITE} 💻 Bem vindo(a) ao Gerenciador Whaticket, selecione abaixo a proxima ação!${GRAY_LIGHT}"
+  printf "${WHITE} 💻 ¡Bienvenido(a) al Gestor WhaConnect! ¡Por favor, seleccione la próxima acción a continuación!${GRAY_LIGHT}"
   printf "\n\n"
   printf "   [0] Instalar\n"
-  printf "   [1] Atualizar\n"
-  printf "   [2] Deletar\n"
+  printf "   [1] Actualizar\n"
+  printf "   [2] Eliminar\n"
   printf "   [3] Bloquear\n"
   printf "   [4] Desbloquear\n"
   printf "   [5] Alter. dominio\n"
